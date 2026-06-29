@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Interview Portal</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Lag Gayi Job?</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Aptitude</a></li>
+        <li><a href="#">Technical</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Dashboard</a></li>
+
+        <!-- Mobile Login -->
+        <li class="mobile-login">
+          <button class="login-btn">
+            <i class="ri-user-fill"></i>
+            Login / Sign Up
+          </button>
+        </li>
+      </ul>
+
+      <!-- Desktop Login -->
+      <button class="login-btn desktop-login">
+        <i class="ri-user-fill"></i>
+        Login / Sign Up
+      </button>
+
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+
+    <div class="large-container">
+      <!-- Hero Section -->
+      <section class="container">
+        <div class="left">
+          <div class="content">
+            <p class="para">🚀 Placement Preparation Platform</p>
+            <h2 class="heading">
+              <span>Smart Interview</span> <br />
+              & Placement Preparation Portal
+            </h2>
+            <h4 class="sub-heading">
+              Master Aptitude, Technical Interviews, and Placement Skills
+              through structured learning and practice.
+            </h4>
+          </div>
+          <div class="hero-btn">
+            <button>Get Started</button>
+            <button>Explore Resources</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./Images/HomePNGWithoutBackground.png" alt="" />
+        </div>
+
+        <!-- Wave for merge 1&2 sections -->
+        <div class="wave">
+          <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+            <path
+              fill="#4f8cff33"
+              d="M0,96L60,90C120,85,240,75,360,90C480,105,600,145,720,145C840,145,960,105,1080,90C1200,75,1320,85,1380,90L1440,96L1440,180L0,180Z"
+            ></path>
+
+            <path
+              fill="#eef5ff"
+              d="M0,120L60,110C120,100,240,80,360,90C480,100,600,140,720,140C840,140,960,100,1080,90C1200,80,1320,100,1380,110L1440,120L1440,180L0,180Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Statistics Section  -->
+      <section class="statistics">
+        <div class="mini-divider"></div>
+        <h2 class="achivement-heading">OUR <span>ACHIEVEMENTS</span></h2>
+        <p class="para">Helping Students Prepare for Placements</p>
+        <div class="cards">
+          <div class="card card-1">
+            <i
+              class="ri-book-open-fill"
+              style="font-size: 40px; color: #3563e9"
+            ></i>
+            <h2>1000+</h2>
+            <h3>Apptitude Questions</h3>
+            <p class="para">
+              Practice Quantitative, Logical and Verbal Aptitude.
+            </p>
+          </div>
+          <div class="card card-2">
+            <i
+              class="ri-macbook-fill"
+              style="font-size: 40px; color: #3563e9"
+            ></i>
+            <h2>500+</h2>
+            <h3>Technical Questions</h3>
+            <p class="para">DSA, C++, DBMS, OS, CN and OOPs.</p>
+          </div>
+          <div class="card card-3">
+            <i
+              class="ri-book-shelf-line"
+              style="font-size: 40px; color: #3563e9"
+            ></i>
+            <h2>50+</h2>
+            <h3>Learning Resources</h3>
+            <p class="para">Notes, PDFs, Cheat Sheets & Interview Guides.</p>
+          </div>
+          <div class="card card-4">
+            <i
+              class="ri-bar-chart-box-ai-line"
+              style="font-size: 40px; color: #3563e9"
+            ></i>
+            <h2>95%</h2>
+            <h3>Placement Readiness</h3>
+            <p class="para">Complete preparation roadmap.</p>
+          </div>
+        </div>
+
+        <!-- Wave for merge 2&3 sections -->
+        <div class="wave-bottom">
+          <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+            <path
+              fill="#d7e8ff"
+              d="M0,96L60,90C120,85,240,75,360,90C480,105,600,145,720,145C840,145,960,105,1080,90C1200,75,1320,85,1380,90L1440,96L1440,180L0,180Z"
+            ></path>
+
+            <path
+              fill="#ffff"
+              d="M0,120L60,110C120,100,240,80,360,90C480,100,600,140,720,140C840,140,960,100,1080,90C1200,80,1320,100,1380,110L1440,120L1440,180L0,180Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ================= HOW IT WORKS ================= -->
+
+      <section class="how-it-works">
+        <div class="section-title">
+          <div class="mini-divider"></div>
+          <span class="tag">HOW IT WORKS</span>
+          <h2>Your Placement Journey</h2>
+          <p>
+            Follow these simple steps to prepare effectively for your dream job.
+          </p>
+        </div>
+
+        <div class="journey-container">
+          <div class="timeline">
+            <div class="step active" data-step="0">
+              <div class="step-number">1</div>
+              <div class="step-text">
+                <h3>Register</h3>
+                <p>Create your account</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-step="1">
+              <div class="step-number">2</div>
+              <div class="step-text">
+                <h3>Choose Module</h3>
+                <p>Select your preparation path</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-step="2">
+              <div class="step-number">3</div>
+              <div class="step-text">
+                <h3>Practice</h3>
+                <p>Solve questions daily</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-step="3">
+              <div class="step-number">4</div>
+              <div class="step-text">
+                <h3>Track Progress</h3>
+                <p>Monitor your improvement</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-step="4">
+              <div class="step-number">5</div>
+              <div class="step-text">
+                <h3>Placement Ready</h3>
+                <p>Crack your interviews</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="info-card">
+            <i class="ri-user-3-fill info-icon"></i>
+
+            <h2 id="cardTitle">Register Yourself</h2>
+
+            <p id="cardDescription">
+              Create your account to access aptitude questions, technical
+              interview preparation, learning resources and your personal
+              dashboard.
+            </p>
+
+            <button id="nextBtn">Next Step →</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recruiter">
+        <div class="title">
+          <div class="mini-divider"></div>
+          <h2 class="achivement-heading">Top <span>Recruiters</span></h2>
+          <p class="para">
+            Practice important aptitude and technical interview questions based
+            on the hiring patterns of top companies.
+          </p>
+        </div>
+
+        <div class="logo-slider">
+          <div class="logo-track">
+            <img src="Images/google-logo-icon-symbol-free-png.webp" alt="" />
+            <img src="Images/microsoft_img.webp" alt="" />
+            <img src="Images/amazon-logo.png" alt="" />
+            <img src="Images/tcs_logo.svg" alt="" />
+            <img src="Images/infosys-free-png.webp" alt="" />
+            <img src="Images/Wipro-logo.png" alt="" />
+            <img src="Images/DeloitteNewLogo.png" alt="" />
+            <img src="Images/ibm logo.png" alt="" />
+
+            <!-- repeat these images -->
+            <img src="Images/google-logo-icon-symbol-free-png.webp" alt="" />
+            <img src="Images/microsoft_img.webp" alt="" />
+            <img src="Images/amazon-logo.png" alt="" />
+            <img src="Images/tcs_logo.svg" alt="" />
+            <img src="Images/infosys-free-png.webp" alt="" />
+            <img src="Images/Wipro-logo.png" alt="" />
+            <img src="Images/DeloitteNewLogo.png" alt="" />
+            <img src="Images/ibm logo.png" alt="" />
+          </div>
+        </div>
+
+        <div class="below-text title">
+          <p>
+            The questions provided are <span><b>practice</b></span> questions
+            inspired by commonly asked
+            <span><b>interview topics and patterns</b></span
+            >. They are intended to help students prepare
+            <span><b>effectively</b></span> and are not official interview
+            questions released by these <span><b>companies.</b></span>
+          </p>
+        </div>
+      </section>
+
+      <section class="query-section">
+        <div class="section-title">
+          <div class="mini-divider"></div>
+          <h2>💬 Ask Your <span>Doubt</span></h2>
+
+          <!-- <div class="line"></div> -->
+
+          <p>
+            Got a question about Aptitude, DSA or Technical topics? Submit your
+            query and our team will help you as soon as possible.
+          </p>
+        </div>
+
+        <div class="query-container">
+          <!-- Left Card -->
+
+          <div class="query-form">
+            <form id="queryForm">
+              <div class="input-box">
+                <label><i class="fa-solid fa-user"></i> Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label><i class="fa-solid fa-envelope"></i> Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label><i class="fa-solid fa-layer-group"></i> Category</label>
+
+                <select required id="category">
+                  <option value="">Select Category</option>
+
+                  <option>Aptitude</option>
+                  <option>DSA</option>
+                  <option>Technical</option>
+                  <option>Resources</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label>
+                  <i class="fa-solid fa-circle-question"></i>
+                  Question
+                </label>
+                <textarea
+                  id="question"
+                  rows="5"
+                  placeholder="Write your query here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="button-area">
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Send Query
+                </button>
+              </div>
+
+              <div id="successMsg">
+                <i class="fa-solid fa-circle-check"></i>
+                Your Query Submitted Successfully!
+                <br />
+
+                <span>THANK YOU ❤️</span>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right Card -->
+
+          <div class="support-card">
+            <div class="icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Support Center</h3>
+            <div class="response-box">
+              <p>Average Response</p>
+              <h2>24 Hours</h2>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="features">
+              <div><i class="fa-solid fa-check"></i> Aptitude Help</div>
+              <div><i class="fa-solid fa-check"></i> DSA Help</div>
+              <div><i class="fa-solid fa-check"></i> Technical Help</div>
+              <div><i class="fa-solid fa-check"></i> Interview Guidance</div>
+              <div><i class="fa-solid fa-check"></i> Resources Support</div>
+            </div>
+
+            <div class="bottom-text">
+              Need urgent assistance?
+              <br /><br />
+              <strong>support@laggayijob.com</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Left -->
+
+          <div class="footer-box">
+            <h2 class="footer-logo">Lag Gayi <span>Job?</span></h2>
+
+            <p>
+              Your one-stop platform for Placement Preparation, Aptitude
+              Practice, Technical Interviews and Learning Resources.
+            </p>
+
+            <div class="social-icons">
+              <a href=" https://github.com/WebAddicted9"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rahulvaishnav78?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/webaddicted.in?igsh=dzE3c29jYTd1MnN5"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a href="https://youtube.com/@codetoolearn?si=v6b4zmgxWaWKYAgy"
+                ><i class="ri-youtube-fill"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#">Aptitude</a>
+            <a href="#">Technical</a>
+            <a href="#">Resources</a>
+            <a href="#">Dashboard</a>
+          </div>
+
+          <!-- Resources -->
+
+          <div class="footer-box">
+            <h3>Preparation</h3>
+
+            <a href="#">Aptitude Questions</a>
+            <a href="#">Interview Questions</a>
+            <a href="#">Mock Tests</a>
+            <a href="#">Company Wise</a>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="footer-box">
+            <h3>Contact</h3>
+
+            <p><i class="ri-mail-fill"></i> support@laggayijob.com</p>
+            <p><i class="ri-map-pin-fill"></i> India</p>
+            <p><i class="ri-time-fill"></i> 24/7 Student Support</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>
+            © 2026 <span>Lag Gayi Job?</span> | Built with ❤️ using HTML, CSS &
+            JavaScript
+          </p>
+
+          <button id="topBtn">
+            <i class="ri-arrow-up-line"></i>
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="queryForm.js"></script>
+  </body>
+</html>
