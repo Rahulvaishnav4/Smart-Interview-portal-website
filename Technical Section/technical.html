@@ -17,30 +17,36 @@
     <link rel="stylesheet" href="technical.css" />
   </head>
   <body>
+    <div id="loader">
+    <div class="spinner"></div>
+    </div>
     <nav class="navbar">
       <div class="logo">Lag Gayi Job?</div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="#">Aptitude</a></li>
-        <li><a href="#">Technical</a></li>
-        <li><a href="#">Resources</a></li>
+        <li><a href="../Technical Section/technical.html">Technical</a></li>
+        <li><a href="../Resources Section/resource.html">Resources</a></li>
         <li><a href="#">Dashboard</a></li>
 
         <!-- Mobile Login -->
-        <li class="mobile-login">
-          <button class="login-btn">
+         <li class="mobile-login">
+          <a href="../Login Page/Modern-Login-Page/index.html" class="login-btn">
             <i class="ri-user-fill"></i>
-            Login / Sign Up
-          </button>
+            <span>Login / Sign Up</span>
+          </a>
         </li>
       </ul>
 
       <!-- Desktop Login -->
-      <button class="login-btn desktop-login">
+      <a
+        href="../Login Page/Modern-Login-Page/index.html"
+        class="login-btn desktop-login"
+      >
         <i class="ri-user-fill"></i>
-        Login / Sign Up
-      </button>
+        <span>Login / Sign Up</span>
+      </a>
 
       <div class="menu-btn" onclick="toggleMenu()">
         <i class="ri-menu-line"></i>
@@ -49,7 +55,7 @@
 
    <!-- =================== TECHNICAL SECTION =================== -->
 
-<section class="technical-section">
+<section class="technical-section" id="company-wise">
     <div class="technical-heading">
         <span class="tag">TECHNICAL PREPARATION</span>
         <h2>
@@ -151,7 +157,7 @@
 
     <!-- Question Counter -->
 
-    <div class="question-info">
+    <div class="question-info" id="interview-question">
         <h3 id="subjectTitle">
             Data Structures & Algorithms
         </h3>
@@ -209,20 +215,20 @@
           <div class="footer-box">
             <h3>Quick Links</h3>
 
-            <a href="#">Home</a>
-            <a href="#">Aptitude</a>
-            <a href="#">Technical</a>
-            <a href="#">Resources</a>
-            <a href="#">Dashboard</a>
+            <a href="../index.html">Home</a>
+            <a href="../Aptitude Section/aptitude.html">Aptitude</a>
+            <a href="./technical.html">Technical</a>
+            <a href="../Resources Section/resource.html">Resources</a>
+            <a href="../Dashboard Section/deshboard.html">Dashboard</a>
           </div>
 
           <div class="footer-box">
             <h3>Preparation</h3>
 
-            <a href="#">Aptitude Questions</a>
-            <a href="#">Interview Questions</a>
-            <a href="#">Mock Tests</a>
-            <a href="#">Company Wise</a>
+            <a href="./Aptitude Section/aptitude.html">Aptitude Questions</a>
+            <a href="#interview-question">Interview Questions</a>
+            <a href="../Resources Section/resource.html#box">Mock Tests</a>
+            <a href="#company-wise">Company Wise</a>
           </div>
 
           <div class="footer-box">
@@ -237,8 +243,8 @@
         <hr />
 
         <div class="footer-bottom">
-          <p>
-            © 2026 <span>Lag Gayi Job?</span> | Built with ❤️ using HTML, CSS &
+         <p>
+            © 2026 <span>Lag Gayi Job?</span> | Built with <b style="color:red">TEAM</b> using HTML, CSS &
             JavaScript
           </p>
 

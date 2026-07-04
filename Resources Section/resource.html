@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Interview Portal - Resources</title>
+
+    <link rel="stylesheet" href="resource.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <nav class="navbar">
+      <div class="logo">Lag Gayi Job?</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Aptitude</a></li>
+        <li><a href="../Technical Section/technical.html">Technical</a></li>
+        <li><a href="./resource.html">Resources</a></li>
+        <li><a href="#">Dashboard</a></li>
+
+        <!-- Mobile Login -->
+        <li class="mobile-login">
+          <a
+            href="../Login Page/Modern-Login-Page/index.html"
+            class="login-btn"
+          >
+            <i class="ri-user-fill"></i>
+            <span>Login / Sign Up</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop Login -->
+      <a
+        href="../Login Page/Modern-Login-Page/index.html"
+        class="login-btn desktop-login"
+      >
+        <i class="ri-user-fill"></i>
+        <span>Login / Sign Up</span>
+      </a>
+
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div>
+        <h1>Resources</h1>
+
+        <p>
+          All the important resources to help you prepare better for interviews.
+        </p>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Search resources..." />
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </section>
+
+    <!-- ================= RESOURCE CARDS ================= -->
+
+    <section class="cards">
+      <div class="card">
+        <div class="icon blue">
+          <i class="fa-solid fa-file"></i>
+        </div>
+
+        <h3>Resume Templates</h3>
+
+        <p>ATS-friendly resume samples and formats.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon green">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+
+        <h3>Interview Questions</h3>
+
+        <p>HR & Technical interview questions.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon purple">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+
+        <h3>Video Tutorials</h3>
+
+        <p>Interview tips, coding and communication.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon yellow">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <h3>Coding Practice</h3>
+
+        <p>Practice coding questions from top websites.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon pink">
+          <i class="fa-solid fa-book"></i>
+        </div>
+
+        <h3>Aptitude Notes</h3>
+
+        <p>Quantitative, Reasoning & Verbal Notes.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+
+      <div class="card">
+        <div class="icon cyan">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+
+        <h3>Interview Tips</h3>
+
+        <p>Tips and tricks to crack interviews.</p>
+
+        <a href="#">Explore →</a>
+      </div>
+    </section>
+
+    <!-- ================= TWO COLUMN SECTION ================= -->
+
+    <section class="two-column">
+      <!-- YouTube -->
+
+      <div class="box" id="box">
+        <h2>
+          <i class="fa-brands fa-youtube"></i> Recommended YouTube Channels
+        </h2>
+
+        <ul>
+          <li><i class="fa-brands fa-youtube"></i> Apna College</li>
+
+          <li><i class="fa-brands fa-youtube"></i> CodeWithHarry</li>
+
+          <li><i class="fa-brands fa-youtube"></i> Love Babbar</li>
+
+          <li><i class="fa-brands fa-youtube"></i> Take U Forward (Striver)</li>
+
+          <li><i class="fa-brands fa-youtube"></i> FreeCodeCamp</li>
+
+          <li><i class="fa-brands fa-youtube"></i> Jenny's Lectures</li>
+        </ul>
+
+        <button>View More</button>
+      </div>
+
+      <!-- Websites -->
+
+      <div class="box box2">
+        <h2><i class="fa-solid fa-globe"></i> Useful Websites</h2>
+
+        <ul>
+          <li><i class="fa-solid fa-globe"></i> LeetCode</li>
+
+          <li><i class="fa-solid fa-globe"></i> GeeksforGeeks</li>
+
+          <li><i class="fa-solid fa-globe"></i> HackerRank</li>
+
+          <li><i class="fa-solid fa-globe"></i> CodeChef</li>
+
+          <li><i class="fa-solid fa-globe"></i> InterviewBit</li>
+
+          <li><i class="fa-solid fa-globe"></i> Roadmap.sh</li>
+
+          <li><i class="fa-solid fa-globe"></i> W3Schools</li>
+
+          <li><i class="fa-solid fa-globe"></i> MDN Web Docs</li>
+        </ul>
+
+        <button>View More</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2 class="footer-logo">Lag Gayi <span>Job?</span></h2>
+
+          <p>
+            Your one-stop platform for Placement Preparation, Aptitude Practice,
+            Technical Interviews and Learning Resources.
+          </p>
+
+          <div class="social-icons">
+            <a href=" https://github.com/WebAddicted9"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rahulvaishnav78?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/webaddicted.in?igsh=dzE3c29jYTd1MnN5"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://youtube.com/@codetoolearn?si=v6b4zmgxWaWKYAgy"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+
+          <a href="../index.html">Home</a>
+          <a href="../Aptitude Section/aptitude.html">Aptitude</a>
+          <a href="../Technical Section/technical.html">Technical</a>
+          <a href="./resource.html">Resources</a>
+          <a href="../Dashboard Section/deshboard.html">Dashboard</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Preparation</h3>
+
+          <a href="./Aptitude Section/aptitude.html">Aptitude Questions</a>
+          <a href="../Technical Section/technical.html#interview-question">
+            Interview Questions
+          </a>
+          <a href="#box">Mock Tests</a>
+          <a href="../Technical Section/technical.html#company-wise"
+            >Company Wise</a
+          >
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact</h3>
+
+          <p><i class="ri-mail-fill"></i> support@laggayijob.com</p>
+          <p><i class="ri-map-pin-fill"></i> India</p>
+          <p><i class="ri-time-fill"></i> 24/7 Student Support</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span>Lag Gayi Job?</span> | Built with
+          <b style="color: red">TEAM</b> using HTML, CSS & JavaScript
+        </p>
+
+        <button id="topBtn">
+          <i class="ri-arrow-up-line"></i>
+        </button>
+      </div>
+    </footer>
+
+    <script src="resource.js"></script>
+  </body>
+</html>

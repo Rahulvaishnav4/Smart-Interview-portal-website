@@ -4,6 +4,22 @@ function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
 
+// Loader
+
+const loader = document.getElementById("loader");
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        loader.style.display = "flex";
+
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 500); // 0.5 sec baad page open hoga
+    });
+});
+
 // ===================== Technical Section =====================
 
 const subjectCards = document.querySelectorAll(".subject-card");
@@ -144,3 +160,14 @@ loadMoreBtn.addEventListener("click", () => {
   visibleQuestions += 10;
   renderQuestions();
 });
+
+// Footer top btn
+const topbtn = document.getElementById('topBtn');
+
+topbtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})

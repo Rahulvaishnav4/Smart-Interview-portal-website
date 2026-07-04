@@ -31,6 +31,31 @@ body {
   background: var(--bg-color);
 }
 
+#loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.spinner{
+    width:45px;
+    height:45px;
+    border:5px solid #ddd;
+    border-top:5px solid #007bff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
 /* Navbar */
 
 .navbar {
@@ -39,7 +64,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 11111;
   box-shadow: var(--box-shadow);
 }
 
@@ -70,21 +97,31 @@ body {
 /* Login Button */
 
 .login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
   padding: 12px 22px;
-  border: none;
-  color: var(--black);
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
   background: var(--white-color);
-  transition: 0.3s;
-  /* border: 1px dotted black; */
+  color: var(--black);
+  text-decoration: none;
+
+  border-radius: 6px;
+  font-weight: 600;
+
   box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
 }
 
-.login-btn:hover {
-  background: var(--accent-color);
-  color: var(--white-color);
+.login-btn:hover{
+    background: var(--accent-color);
+    color: white;
+}
+
+.login-btn:hover i,
+.login-btn:hover span{
+    color: white;
 }
 
 .mobile-login {
@@ -611,13 +648,24 @@ body {
 }
 /*  Mobile & Small Tablet */
 
-@media (max-width: 900px) {
-  .desktop-login {
+@media (max-width: 1000px) {
+ .desktop-login {
     display: none;
   }
 
-  .menu-btn {
+  .mobile-login {
     display: block;
+    width: 100%;
+  }
+
+  .menu-btn{
+    display: block;
+  }
+  .mobile-login .login-btn {
+    width: 90%;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
   }
   .nav-links {
     z-index: 22;
@@ -644,9 +692,7 @@ body {
   .nav-links li {
     margin: 15px 0;
   }
-  .mobile-login {
-    display: block;
-  }
+ 
 
   .footer-container {
     grid-template-columns: 1fr 1fr;

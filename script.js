@@ -4,6 +4,21 @@ function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
 
+// Loader
+const loader = document.getElementById("loader");
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        loader.style.display = "flex";
+
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 500); // 0.5 sec baad page open hoga
+    });
+});
+
 // ===================== How It Works =====================
 
 const steps = document.querySelectorAll(".step");
@@ -81,3 +96,13 @@ nextBtn.addEventListener("click", function () {
 
 updateContent(0);
 
+
+const topbtn = document.getElementById('topBtn');
+
+topbtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
