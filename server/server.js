@@ -1,5 +1,6 @@
 const express = require("express");
-const cors = require("cors");
+const cors = require("cors"); // use to connect frontend or backend with diff port numbers
+require("dotenv").config(); // use to store sensitive info like port,passwords , Database URL etc
 const app = express();
 
 const queryDb = require("./data");
@@ -25,6 +26,7 @@ app.post("/query", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT; // its access the PORT number from .env file
+app.listen(PORT, () => {
   console.log("Server is running ");
 });
