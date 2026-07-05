@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Interview Portal</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="aptitude.css" />
+  </head>
+  <body>
+    <div id="loader">
+    <div class="spinner"></div>
+    </div>
+    <nav class="navbar">
+      <div class="logo">Lag Gayi Job?</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./aptitude.html">Aptitude</a></li>
+        <li><a href="../Technical Section/technical.html">Technical</a></li>
+        <li><a href="../Resources Section/resource.html">Resources</a></li>
+        <li><a href="../Dashboard Section/deshboard.html">Dashboard</a></li>
+
+        <!-- Mobile Login -->
+         <li class="mobile-login">
+          <a href="../Login Page/Modern-Login-Page/index.html" class="login-btn">
+            <i class="ri-user-fill"></i>
+            <span>Login / Sign Up</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop Login -->
+      <a
+        href="../Login Page/Modern-Login-Page/index.html"
+        class="login-btn desktop-login"
+      >
+        <i class="ri-user-fill"></i>
+        <span>Login / Sign Up</span>
+      </a>
+
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+
+   <!-- =================== TECHNICAL SECTION =================== -->
+
+<section class="technical-section" id="company-wise">
+    <div class="technical-heading">
+        <span class="tag">APTITUDE PREPARATION</span>
+        <h2>
+            Crack Your <span>Aptitude Test</span>
+        </h2>
+
+        <p>
+           Practice company-wise and subject-wise aptitude questions. Choose any topic below and begin your preparation.
+        </p>
+    </div>
+
+    <div class="search-box">
+        <i class="ri-search-line"></i>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search questions..."
+        >
+    </div>
+
+    <div class="subject-grid">
+        <div class="subject-card active" data-subject="qa">
+            <div class="subject-icon">
+                <i class="ri-code-box-fill"></i>
+            </div>
+            <h3>Quantitative</h3>
+            <p>160+ Questions</p>
+        </div>
+
+
+        <div class="subject-card" data-subject="lr">
+            <div class="subject-icon">
+                <i class="ri-brain-line"></i>
+            </div>
+            <h3>logical</h3>
+            <p>202+ Questions</p>
+        </div>
+
+
+        <div class="subject-card" data-subject="vb">
+            <div class="subject-icon">
+                <i class="ri-speak-fill"></i>
+            </div>
+            <h3>verbal</h3>
+            <p>145+ Questions</p>
+        </div>
+
+
+        <div class="subject-card" data-subject="nvb">
+            <div class="subject-icon">
+              <i class="ri-star-off-fill"></i>
+            </div>
+            <h3>Non-Verbal</h3>
+            <p>145+ Questions</p>
+        </div>
+
+
+        <div class="subject-card" data-subject="mt">
+            <div class="subject-icon">
+               <i class="ri-survey-line"></i>
+            </div>
+            <h3>Mock Text</h3>
+            <p>15+ Questions</p>
+        </div>
+
+
+        <div class="subject-card" data-subject="pyq">
+            <div class="subject-icon">
+               <i class="ri-file-list-line"></i>
+            </div>
+            <h3>PYQ</h3>
+            <p>264+ Questions</p>
+        </div>
+    </div>
+
+     <!-- <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="easy">
+            Easy
+        </button>
+
+        <button class="filter-btn" data-filter="medium">
+            Medium
+        </button>
+
+        <button class="filter-btn" data-filter="hard">
+            Hard
+        </button>
+
+    </div>  -->
+
+
+
+
+    <!-- Question Counter -->
+
+    <div class="question-info" id="interview-question">
+        <h3 id="subjectTitle">
+            Quantitative Aptitude
+        </h3>
+        <span id="questionCount">
+            Total Questions : 20
+        </span>
+
+    </div>
+
+    <div id="questionContainer" class="question-container">
+
+    </div>
+
+
+
+    <div class="load-more">
+        <button id="loadMoreBtn">
+            Load More Questions
+            <i class="ri-arrow-down-line"></i>
+        </button>
+
+    </div>
+</section>
+
+      <footer class="footer">
+        <div class="footer-container">
+        
+          <div class="footer-box">
+            <h2 class="footer-logo">Lag Gayi <span>Job?</span></h2>
+
+            <p>
+              Your one-stop platform for Placement Preparation, Aptitude
+              Practice, Technical Interviews and Learning Resources.
+            </p>
+
+            <div class="social-icons">
+              <a href=" https://github.com/WebAddicted9"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rahulvaishnav78?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/webaddicted.in?igsh=dzE3c29jYTd1MnN5"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a href="https://youtube.com/@codetoolearn?si=v6b4zmgxWaWKYAgy"
+                ><i class="ri-youtube-fill"></i
+              ></a>
+            </div>
+          </div>
+
+
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="../index.html">Home</a>
+            <a href="../Aptitude Section/aptitude.html">Aptitude</a>
+            <a href="./technical.html">Technical</a>
+            <a href="../Resources Section/resource.html">Resources</a>
+            <a href="../Dashboard Section/deshboard.html">Dashboard</a>
+          </div>
+
+          <div class="footer-box">
+            <h3>Preparation</h3>
+
+            <a href="./Aptitude Section/aptitude.html">Aptitude Questions</a>
+            <a href="#interview-question">Interview Questions</a>
+            <a href="../Aptitude Section/aptitude.html">Mock Tests</a>
+            <a href="#company-wise">Company Wise</a>
+          </div>
+
+          <div class="footer-box">
+            <h3>Contact</h3>
+
+            <p><i class="ri-mail-fill"></i> support@laggayijob.com</p>
+            <p><i class="ri-map-pin-fill"></i> India</p>
+            <p><i class="ri-time-fill"></i> 24/7 Student Support</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+         <p>
+            © 2026 <span>Lag Gayi Job?</span> | Built with <b style="color:red">TEAM</b> using HTML, CSS &
+            JavaScript
+          </p>
+
+          <button id="topBtn">
+            <i class="ri-arrow-up-line"></i>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="question.js"></script>
+    <script src="aptitude.js"></script>
+  </body>
+</html>
