@@ -15,7 +15,7 @@ document.querySelectorAll("a").forEach(link => {
 
         setTimeout(() => {
             window.location.href = this.href;
-        }, 500); // 0.5 sec baad page open hoga
+        }, 500); 
     });
 });
 
@@ -59,7 +59,6 @@ const icons = [
 let currentStep = 0;
 
 function updateContent(index) {
-  // Remove active class from all steps
   for (let i = 0; i < steps.length; i++) {
     steps[i].classList.remove("active");
   }

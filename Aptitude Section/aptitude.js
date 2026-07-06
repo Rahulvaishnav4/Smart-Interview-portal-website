@@ -64,7 +64,7 @@ searchInput.addEventListener("keyup", () => {
   renderQuestions();
 });
 
-// ===================== Render Questions =====================
+// Render Questions
 
 function renderQuestions() {
 
@@ -95,7 +95,7 @@ function renderQuestions() {
   }
 }
 
-// ===================== Create Question Card =====================
+// Create Question Card 
 
 function createQuestionCard(question, index) {
   const card = document.createElement("div");
@@ -131,7 +131,7 @@ function createQuestionCard(question, index) {
   questionContainer.appendChild(card);
 }
 
-// ===================== View / Hide Answer =====================
+//  View / Hide Answer 
 
 questionContainer.addEventListener("click", function (e) {
   const button = e.target.closest(".answer-btn");
@@ -154,7 +154,7 @@ questionContainer.addEventListener("click", function (e) {
   }
 });
 
-// ===================== Load More =====================
+//  Load More 
 
 loadMoreBtn.addEventListener("click", () => {
   visibleQuestions += 10;

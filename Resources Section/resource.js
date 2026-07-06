@@ -21,7 +21,6 @@ document.querySelectorAll("a").forEach(link => {
 // search resources
 
 const search = document.getElementById("search");
-
 const cards = document.querySelectorAll(".card");
 
 search.addEventListener("keyup", function () {
